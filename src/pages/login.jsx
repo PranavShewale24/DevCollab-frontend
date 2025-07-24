@@ -24,7 +24,7 @@ function Login(){
     const handlesubmit=(e)=>{
         console.log("successfully signedup");
         setmessage("successfully signedup");
-        navigate("/");
+        navigate("/home");
     }; 
     return(
     <div className="flex items-center justify-center ">
