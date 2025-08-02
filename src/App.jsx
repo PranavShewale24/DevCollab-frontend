@@ -5,7 +5,10 @@ import SignUp from './pages/signup'
 import Navbar from './pages/navbar'
 import NewPost from './pages/newpost'
 import ProjectDetail from './pages/projectdetails'
-
+import Profile from './pages/myprofile'
+import RequestsAndInvitations from './pages/request_invitation'
+import Projects from './pages/myprojects'
+//import ChatBox from './pages/chatbox'
 function App() {
   return (
     <div className=''>
@@ -16,6 +19,10 @@ function App() {
         <Route path='/home' element={<Home />} /> 
         <Route path='/newpost' element={<NewPost  />} /> 
          <Route path="/project/:id" element={<ProjectDetail />} />
+         <Route path="/profile/:id" element={<Profile/>}/>
+          <Route path="/request_invitation" element={<RequestsAndInvitations />} />
+        <Route path="/myprojects" element={<Projects />} />
+        {/* <Route path="/chatbox/:id" element={<ChatBox />} /> */}
       </Routes>
     </div>
   )
